@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 48px 20px; }
+    .card { border: 1px solid rgba(127,127,127,.25); border-radius: 18px; padding: 18px 18px; margin: 14px 0; }
+    h1 { font-size: 40px; margin: 0 0 10px; }
+    p { margin: 0 0 10px; opacity: .85; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .pill { display: inline-block; padding: 8px 12px; border-radius: 999px; border: 1px solid rgba(127,127,127,.25); margin: 6px 8px 0 0; }
+    .muted { opacity: .75; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Dashboard Home</h1>
+    <p class="muted">A hub for my resume, projects, and public notes.</p>
+
+    <div class="card">
+      <h2>Quick links</h2>
+      <div>
+        <a class="pill" href="#" target="_blank" rel="noreferrer">Resume (soon)</a>
+        <a class="pill" href="https://linkedin.com/in/YOUR-HANDLE" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="pill" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="pill" href="https://YOUR-BOTHNIA-LINK-HERE" target="_blank" rel="noreferrer">Bothnia-Edge HPC</a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Public notes (Wiki)</h2>
+        <ul>
+          <li><a href="https://github.com/YOUR-USERNAME/public-dashboard/wiki/Projects">Projects</a></li>
+          <li><a href="https://github.com/YOUR-USERNAME/public-dashboard/wiki/Organizations">Organizations</a></li>
+          <li><a href="https://github.com/YOUR-USERNAME/public-dashboard/wiki/Runbooks">Runbooks</a></li>
+          <li><a href="https://github.com/YOUR-USERNAME/public-dashboard/wiki/Ideas">Ideas</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Featured projects</h2>
+        <ul>
+          <li><a href="https://github.com/YOUR-USERNAME/PROJECT-A">Project A</a> — one-line description</li>
+          <li><a href="https://github.com/YOUR-USERNAME/PROJECT-B">Project B</a> — one-line description</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </div>
+
+    <p class="muted">© <span id="y"></span> YOUR NAME</p>
+  </div>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
